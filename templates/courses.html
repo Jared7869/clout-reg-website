@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="courses-section">
+        <div class="courses-section-container">
+            <h1>Our courses</h1>
+            {% for course in courses  %}
+                <h4>{{ course.name }}</h4>
+                <p>{{ course.duration }} -----  {{ course.cost }}</p>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
